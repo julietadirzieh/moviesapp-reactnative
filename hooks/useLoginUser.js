@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useFormik } from "formik";
+import { useFormik, resetForm } from "formik";
 import * as Yup from "yup";
 import { useNavigation } from "@react-navigation/native";
 
@@ -13,12 +13,13 @@ export const useLoginUser = () => {
 
     const navigation = useNavigation();
 
-    const onSubmit = (values) => {
+    const onSubmit = (values, { resetForm }) => {
         try {
             values.email = values.email.toLowerCase();
             values.password = values.password.toLowerCase();
-            setLogin(true);
+            setLogin(!login);
             navigation.navigate("HomeTab");
+            resetForm();
         } catch (err) {
             console.log(err);
         }
