@@ -1,6 +1,7 @@
 import { TextInput, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import styles from "./styles";
+import colors from "../../theme/colors";
 
 const SearchBar = ({ inputRef, onSearch }) => {
   const handleSearchTextChange = (text) => {
@@ -9,13 +10,18 @@ const SearchBar = ({ inputRef, onSearch }) => {
 
   return (
     <View style={styles.container}>
-      <Ionicons style={styles.icon} size={20} name="search" color="#E50914" />
+      <Ionicons
+        style={styles.icon}
+        size={20}
+        name="search"
+        color={colors.red}
+      />
       <TextInput
-        cursorColor="#E50914"
-        selectionColor="#fff"
+        cursorColor={colors.red}
+        selectionColor={colors.white}
         style={styles.input}
         placeholder="Search your content"
-        placeholderTextColor="#E50914"
+        placeholderTextColor={colors.red}
         ref={inputRef}
         onChangeText={handleSearchTextChange}
       />

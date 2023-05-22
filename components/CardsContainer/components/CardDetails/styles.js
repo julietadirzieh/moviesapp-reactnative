@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
 import { fp, hp, wp } from '../../../../theme/scale';
+import colors from "../../../../theme/colors";
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "space-between",
-        backgroundColor: '#141414',
+        backgroundColor: colors.background,
         paddingBottom: hp(2)
     },
     close: {
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
         right: 10,
     },
     title: {
-        color: '#fff',
+        color: colors.white,
         fontSize: fp(3),
         fontWeight: "bold",
         paddingTop: hp(2),
@@ -28,10 +29,10 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: wp(5),
         borderTopRightRadius: wp(5),
         borderWidth: 1,
-        borderColor: '#E50914',
+        borderColor: colors.red,
     },
     overview: {
-        color: '#fff',
+        color: colors.white,
         fontSize: fp(1.5),
         paddingHorizontal: hp(2),
         paddingTop: 0,
@@ -39,20 +40,20 @@ const styles = StyleSheet.create({
         textAlign: "justify"
     },
     voteAverage: {
-        color: '#fff',
+        color: colors.white,
         fontSize: fp(1.5),
         marginHorizontal: wp(3),
         borderRadius: wp(2),
         marginBottom: hp(2),
     },
     voteCount: {
-        color: 'whitesmoke',
+        color: colors.whitesmoke,
         fontSize: fp(0.7),
         marginLeft: wp(3),
     },
     btn: {
         marginTop: hp(2),
-        color: '#E50914',
+        color: colors.red,
         flexDirection: "row"
     },
     buttonsContainer: {

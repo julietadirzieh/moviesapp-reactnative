@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { fp, hp, wp } from '../../theme/scale.js';
+import colors from "../../theme/colors.js";
 
 const styles = StyleSheet.create({
     container: {
@@ -15,17 +16,17 @@ const styles = StyleSheet.create({
         borderWidth: wp(0.2),
         paddingVertical: hp(1.5),
         paddingHorizontal: wp(4),
-        borderColor: "#E50914",
+        borderColor: colors.red,
     },
     text: {
-        color: "#E50914",
+        color: colors.red,
         fontSize: fp(2),
         marginLeft: wp(4),
         textTransform: "uppercase",
         fontWeight: "bold",
     },
     outlinedText: {
-        color: "#E50914",
+        color: colors.red,
         fontSize: fp(2),
         marginLeft: wp(4),
         textTransform: "uppercase",
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
     },
     icon: {
         fontSize: fp(2),
-        color: "#E50914",
+        color: colors.red,
     },
 });
 

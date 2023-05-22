@@ -7,6 +7,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useRoute } from "@react-navigation/native";
 
 import { fetchMediaDetails } from "../../../../services/MediaServices";
+import colors from "../../../../theme/colors";
 
 const CardDetails = ({ movieId, mediaType }) => {
   const navigation = useNavigation();
@@ -62,7 +63,7 @@ const CardDetails = ({ movieId, mediaType }) => {
       />
       <Text style={styles.title}>{mediaTitle}</Text>
       <Text style={styles.voteAverage}>
-        <Ionicons name="star" size={15} color="#E50914" /> {vote_average}
+        <Ionicons name="star" size={15} color={colors.red} /> {vote_average}
         <Text style={styles.voteCount}> {vote_count} votes</Text>
       </Text>
       <Text style={styles.overview}>{overview}</Text>

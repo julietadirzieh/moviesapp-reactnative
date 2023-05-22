@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
+import { hp } from "../../theme/scale";
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        paddingVertical: hp(2),
         backgroundColor: '#141414',
     }
 });

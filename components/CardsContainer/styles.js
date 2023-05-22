@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import colors from "../../theme/colors";
 
 const styles = StyleSheet.create({
     container: {
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#141414",
-        borderColor: "#E50914",
+        backgroundColor: colors.background,
+        borderColor: colors.red,
         width: "100%",
         height: "100%",
     },
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
     },
     title: {
-        color: '#fff',
+        color: colors.white,
         fontSize: 30,
     },
     image: {
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
         height: 50,
     },
     description: {
-        color: '#fff',
+        color: colors.white,
         fontSize: 20,
     }
 });

@@ -1,12 +1,15 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, ScrollView, Text } from "react-native";
 import styles from "./styles";
+import { Ionicons } from "@expo/vector-icons";
+import colors from "../../theme/colors";
 
 const UserScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>User!</Text>
-    </View>
+    <ScrollView style={styles.container}>
+      <Ionicons name="person-circle-outline" size={200} color={colors.red} />
+      <Text></Text>
+    </ScrollView>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../../screens/HomeScreen/HomeScreen";
 import MovieDetailsScreen from "../../screens/MovieDetailsScreen/MovieDetailsScreen";
+import colors from "../../theme/colors";
 
 const Stack = createStackNavigator();
 
@@ -14,7 +15,7 @@ const StackNavigator = () => {
           backgroundColor: "#141414",
           borderWidth: 0,
         },
-        headerTintColor: "fff",
+        headerTintColor: colors.white,
       }}
       name=" "
     >

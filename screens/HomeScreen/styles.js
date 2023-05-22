@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { fp, hp, wp } from '../../theme/scale.js';
+import colors from "../../theme/colors.js";
 
 const styles = StyleSheet.create({
     container: {
@@ -10,10 +11,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#141414',
     },
     text: {
-        color: '#fff',
+        color: colors.white,
     },
     title: {
-        color: '#fff',
+        color: colors.white,
         fontSize: fp(2.5),
         fontWeight: 'bold',
         marginLeft: wp(4),
