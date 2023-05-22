@@ -1,9 +1,10 @@
 import { StyleSheet } from "react-native";
+import { fp, hp, wp } from '../../theme/scale.js';
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingVertical: 20,
+        paddingVertical: hp(2),
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: '#141414',
@@ -13,17 +14,20 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#fff',
-        fontSize: 24,
+        fontSize: fp(2.5),
         fontWeight: 'bold',
-        marginLeft: 20,
-        marginTop: 10
+        marginLeft: wp(4),
+        marginTop: hp(2)
     },
     rowContainer: {
         flex: 1,
-        marginVertical: 20,
+        marginVertical: hp(2),
     },
     scrollViewContent: {
-        paddingBottom: 20,
+        paddingBottom: hp(10),
+    },
+    indicator: {
+        paddingBottom: hp(10),
     },
 });
 

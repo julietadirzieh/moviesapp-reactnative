@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Image, Text, View, ScrollView } from "react-native";
+import { Image, Text, View, ScrollView, ActivityIndicator } from "react-native";
 import styles from "./styles";
 import { Ionicons } from "@expo/vector-icons";
 import Button from "../../../Button";
@@ -38,7 +38,8 @@ const CardDetails = ({ movieId, mediaType }) => {
   if (!data) {
     return (
       <View style={styles.container}>
-        <Text>Cargando detalles del media...</Text>
+        <ActivityIndicator size="large" style={styles.indicator} />
+        <Text style={styles.text}>Loading...</Text>
       </View>
     );
   }

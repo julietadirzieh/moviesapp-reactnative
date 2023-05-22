@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useFocusEffect } from "@react-navigation/native";
-import { View, Text, SafeAreaView, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  FlatList,
+  ActivityIndicator,
+} from "react-native";
 import styles from "./styles";
 import SearchBar from "../../components/SearchBar";
 import { getAllMedia } from "../../services/MediaServices";
@@ -50,7 +56,7 @@ const SearchScreen = () => {
   }, []);
   useFocusEffect(handleSearchFocus);
 
-  return (
+  return searchResults ? (
     <SafeAreaView style={styles.container}>
       <SearchBar inputRef={searchInputRef} onSearch={handleSearch} />
       <FlatList
@@ -63,6 +69,8 @@ const SearchScreen = () => {
         columnWrapperStyle={styles.columnWrapper}
       />
     </SafeAreaView>
+  ) : (
+    <ActivityIndicator size="large" />
   );
 };
 

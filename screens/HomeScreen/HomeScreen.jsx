@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { View, ScrollView, Text, SafeAreaView } from "react-native";
+import {
+  View,
+  ScrollView,
+  Text,
+  SafeAreaView,
+  ActivityIndicator,
+} from "react-native";
 import styles from "./styles";
 import CardsContainer from "../../components/CardsContainer";
 import {
@@ -73,21 +79,12 @@ const HomeScreen = () => {
           <Text style={styles.title}>Top Rated TV shows</Text>
           <CardsContainer data={mediaData.topRatedTv} />
         </View>
-
-        {/*         <View style={styles.rowContainer}>
-          <Text style={styles.title}>Últimos lanzamientos películas</Text>
-          <CardsContainer data={mediaData.latestMovies} />
-        </View>
-
-        <View style={styles.rowContainer}>
-          <Text style={styles.title}>Últimos lanzamientos</Text>
-          <CardsContainer data={mediaData.latestTv} />
-        </View> */}
       </ScrollView>
     </SafeAreaView>
   ) : (
     <View style={styles.container}>
-      <Text style={styles.text}>Cargando datos...</Text>
+      <ActivityIndicator size="large" style={styles.indicator} />
+      <Text style={styles.text}>Loading...</Text>
     </View>
   );
 };

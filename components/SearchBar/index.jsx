@@ -9,7 +9,7 @@ const SearchBar = ({ inputRef, onSearch }) => {
 
   return (
     <View style={styles.container}>
-      <Ionicons style={styles.icon} size={15} name="search" color="#E50914" />
+      <Ionicons style={styles.icon} size={20} name="search" color="#E50914" />
       <TextInput
         cursorColor="#E50914"
         selectionColor="#fff"

@@ -26,9 +26,7 @@ const BottomTabNavigator = () => {
         name="HomeStack"
         component={StackNavigator}
         options={{
-          tabBarIcon: () => (
-            <Ionicons name="home" size="30px" color="#E50914" />
-          ),
+          tabBarIcon: () => <Ionicons name="home" size={30} color="#E50914" />,
           tabBarLabel: () => null,
         }}
       />
@@ -37,7 +35,7 @@ const BottomTabNavigator = () => {
         component={SearchScreen}
         options={{
           tabBarIcon: () => (
-            <Ionicons name="search" size="30px" color="#E50914" />
+            <Ionicons name="search" size={30} color="#E50914" />
           ),
           tabBarLabel: () => null,
         }}
@@ -47,11 +45,7 @@ const BottomTabNavigator = () => {
         component={UserScreen}
         options={{
           tabBarIcon: () => (
-            <Ionicons
-              name="person-circle-outline"
-              size="30px"
-              color="#E50914"
-            />
+            <Ionicons name="person-circle-outline" size={30} color="#E50914" />
           ),
           tabBarLabel: () => null,
         }}
