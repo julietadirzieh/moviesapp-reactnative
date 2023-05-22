@@ -8,25 +8,27 @@ const styles = StyleSheet.create({
         alignItems: "center",
         gap: wp(2),
         paddingVertical: hp(1.5),
-        paddingHorizontal: wp(4),
-        backgroundColor: "white",
+        paddingHorizontal: wp(3),
+        backgroundColor: colors.cadetBlue,
+
     },
     outlinedContainer: {
         backgroundColor: "transparent",
         borderWidth: wp(0.2),
-        paddingVertical: hp(1.5),
-        paddingHorizontal: wp(4),
-        borderColor: colors.red,
+        paddingVertical: hp(1.3),
+        paddingHorizontal: wp(3),
+        borderColor: colors.violet,
+        borderWidth: wp(0.5)
     },
     text: {
-        color: colors.red,
+        color: colors.whitesmoke,
         fontSize: fp(2),
         marginLeft: wp(4),
         textTransform: "uppercase",
         fontWeight: "bold",
     },
     outlinedText: {
-        color: colors.red,
+        color: colors.violet,
         fontSize: fp(2),
         marginLeft: wp(4),
         textTransform: "uppercase",
@@ -34,7 +36,11 @@ const styles = StyleSheet.create({
     },
     icon: {
         fontSize: fp(2),
-        color: colors.red,
+        color: colors.whitesmoke,
+    },
+    outlinedIcon: {
+        color: colors.violet,
+        fontSize: fp(2),
     },
 });
 

@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "space-between",
-        backgroundColor: colors.background,
-        paddingBottom: hp(2)
+        backgroundColor: colors.whitesmoke,
+        paddingBottom: hp(6)
     },
     close: {
         position: "absolute",
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         right: 10,
     },
     title: {
-        color: colors.white,
+        color: colors.cadetBlue,
         fontSize: fp(3),
         fontWeight: "bold",
         paddingTop: hp(2),
@@ -28,11 +28,9 @@ const styles = StyleSheet.create({
         width: "100%",
         borderTopLeftRadius: wp(5),
         borderTopRightRadius: wp(5),
-        borderWidth: 1,
-        borderColor: colors.red,
     },
     overview: {
-        color: colors.white,
+        color: colors.terra,
         fontSize: fp(1.5),
         paddingHorizontal: hp(2),
         paddingTop: 0,
@@ -40,28 +38,34 @@ const styles = StyleSheet.create({
         textAlign: "justify"
     },
     voteAverage: {
-        color: colors.white,
+        color: colors.terra,
         fontSize: fp(1.5),
-        marginHorizontal: wp(3),
+        paddingHorizontal: wp(3),
         borderRadius: wp(2),
         marginBottom: hp(2),
     },
     voteCount: {
-        color: colors.whitesmoke,
+        color: colors.terra,
         fontSize: fp(0.7),
         marginLeft: wp(3),
     },
     btn: {
         marginTop: hp(2),
-        color: colors.red,
+        color: colors.cadetBlue,
         flexDirection: "row"
     },
     buttonsContainer: {
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         paddingBottom: hp(2),
-        gap: wp(4)
+        gap: wp(4),
+        marginHorizontal: wp(3),
+    },
+    text: {
+        color: colors.whitesmoke,
+        fontSize: fp(2),
+        textAlign: "center"
     }
 });
 

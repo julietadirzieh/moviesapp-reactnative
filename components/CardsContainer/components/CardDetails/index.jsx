@@ -53,7 +53,6 @@ const CardDetails = ({ movieId, mediaType }) => {
       <Button
         icon="close"
         size="small"
-        outlined
         style={styles.close}
         onPress={handleClose}
       />
@@ -63,7 +62,8 @@ const CardDetails = ({ movieId, mediaType }) => {
       />
       <Text style={styles.title}>{mediaTitle}</Text>
       <Text style={styles.voteAverage}>
-        <Ionicons name="star" size={15} color={colors.red} /> {vote_average}
+        <Ionicons name="star" size={15} color={colors.terra} />
+        {vote_average}
         <Text style={styles.voteCount}> {vote_count} votes</Text>
       </Text>
       <Text style={styles.overview}>{overview}</Text>

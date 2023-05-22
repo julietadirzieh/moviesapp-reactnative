@@ -1,12 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useFocusEffect } from "@react-navigation/native";
-import {
-  View,
-  Text,
-  SafeAreaView,
-  FlatList,
-  ActivityIndicator,
-} from "react-native";
+import { SafeAreaView, View, FlatList, ActivityIndicator } from "react-native";
 import styles from "./styles";
 import SearchBar from "../../components/SearchBar";
 import { getAllMedia } from "../../services/MediaServices";

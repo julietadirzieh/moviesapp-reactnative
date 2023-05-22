@@ -1,17 +1,22 @@
 import { StyleSheet } from "react-native";
 import { fp, hp, wp } from '../../theme/scale.js';
+import colors from "../../theme/colors.js";
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingVertical: hp(20),
+        justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#141414",
+        width: "100%",
+        backgroundColor: colors.whitesmoke,
     },
     columnWrapper: {
-        justifyContent: "space-between",
-        paddingVertical: hp(2),
+        paddingVertical: hp(1),
+        width: "100%",
+        backgroundColor: colors.whitesmoke,
+        paddingHorizontal: wp(2),
     },
+
 });
 
 export default styles;

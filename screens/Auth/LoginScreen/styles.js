@@ -1,13 +1,13 @@
 import { StyleSheet } from "react-native";
-import { fp, hp, wp } from '../../theme/scale.js';
-import colors from "../../theme/colors.js";
+import { fp, hp, wp } from '../../../theme/scale.js';
+import colors from "../../../theme/colors.js";
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: colors.whitesmoke,
+        backgroundColor: colors.violet,
     },
     text: {
         color: colors.whitesmoke,
@@ -33,6 +33,22 @@ const styles = StyleSheet.create({
     },
     indicator: {
         paddingBottom: hp(10),
+    },
+    mainContainer: {
+        flex: 1,
+    },
+    formContainer: {
+        paddingHorizontal: wp(5),
+        marginTop: hp(5),
+    },
+    mt: {
+        marginTop: hp(5),
+    },
+    pr: {
+        paddingRight: wp(5),
+    },
+    btn: {
+        marginTop: hp(8),
     },
 });
 

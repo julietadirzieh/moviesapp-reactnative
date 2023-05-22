@@ -12,16 +12,16 @@ const SearchBar = ({ inputRef, onSearch }) => {
     <View style={styles.container}>
       <Ionicons
         style={styles.icon}
-        size={20}
+        size={25}
         name="search"
-        color={colors.red}
+        color={colors.cadetBlue}
       />
       <TextInput
-        cursorColor={colors.red}
-        selectionColor={colors.white}
+        cursorColor={colors.violet}
+        selectionColor={colors.violet}
         style={styles.input}
         placeholder="Search your content"
-        placeholderTextColor={colors.red}
+        placeholderTextColor={colors.terra}
         ref={inputRef}
         onChangeText={handleSearchTextChange}
       />

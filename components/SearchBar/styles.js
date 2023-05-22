@@ -5,17 +5,17 @@ import colors from '../../theme/colors';
 const styles =
     StyleSheet.create({
         input: {
-            backgroundColor: colors.background,
-            color: colors.red,
+            backgroundColor: colors.whitesmoke,
+            color: colors.cadetBlue,
             width: '90%',
             paddingVertical: hp(1),
             paddingHorizontal: wp(2),
             borderRadius: wp(2),
-            borderColor: colors.red,
+            borderColor: colors.cadetBlue,
             borderWidth: 1
         },
         container: {
-            backgroundColor: colors.background,
+            backgroundColor: colors.whitesmoke,
             paddingHorizontal: wp(8),
             borderRadius: wp(2),
             flexDirection: 'row',

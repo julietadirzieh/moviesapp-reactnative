@@ -8,18 +8,18 @@ import colors from "../../theme/colors";
 
 const BottomTab = createBottomTabNavigator();
 
-const BottomTabNavigator = () => {
+const AppNavigator = () => {
   return (
     <BottomTab.Navigator
       initialRouteName="HomeStack"
-      sceneContainerStyle={{ backgroundColor: colors.background }}
+      sceneContainerStyle={{ backgroundColor: colors.whitesmoke }}
       screenOptions={{
         headerShown: false,
         tabBarHideOnKeyboard: true,
         tabBarStyle: {
-          backgroundColor: colors.background,
-          borderTopColor: colors.red,
-          borderTopWidth: 1,
+          backgroundColor: colors.green,
+          borderTopColor: colors.green,
+          borderTopWidth: 3,
         },
       }}
     >
@@ -28,7 +28,7 @@ const BottomTabNavigator = () => {
         component={StackNavigator}
         options={{
           tabBarIcon: () => (
-            <Ionicons name="home" size={30} color={colors.red} />
+            <Ionicons name="home" size={30} color={colors.whitesmoke} />
           ),
           tabBarLabel: () => null,
         }}
@@ -38,7 +38,7 @@ const BottomTabNavigator = () => {
         component={SearchScreen}
         options={{
           tabBarIcon: () => (
-            <Ionicons name="search" size={30} color={colors.red} />
+            <Ionicons name="search" size={30} color={colors.whitesmoke} />
           ),
           tabBarLabel: () => null,
         }}
@@ -51,7 +51,7 @@ const BottomTabNavigator = () => {
             <Ionicons
               name="person-circle-outline"
               size={30}
-              color={colors.red}
+              color={colors.whitesmoke}
             />
           ),
           tabBarLabel: () => null,
@@ -61,4 +61,4 @@ const BottomTabNavigator = () => {
   );
 };
 
-export default BottomTabNavigator;
+export default AppNavigator;
